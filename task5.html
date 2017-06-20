@@ -10,7 +10,7 @@
 		font-family: '微软雅黑','黑体',sans-serif;
 	}
 	img{
-		display: block;
+		/*display: block;*/
 	}
 	header{
 		width: 100%;
@@ -25,22 +25,23 @@
 	header img{
 		width: 18px;
 		height: 18px;
-		margin: 15px 0;
+		margin: 15px 5px;
 		float: left;
 	}
 	.image
 	{
 		width: 100%;
-		height: 400px;
+		height: 300px;
 		background-image: url(./bg.jpg);
 		background-repeat: no-repeat;
 		background-size: 100%;
 		background-position-y: 50px; 
+		z-index: -2;
 	}
 	.pic{
 		width: 400px;
 		height: 100px;
-		padding: 10% 10% 0 5%;
+		padding: 15% 15% 0 5%;
 	}
 	.pic img{
 		float: left;
@@ -48,39 +49,73 @@
 	.name{
 		color: white;
 		font-weight: bold;
-		text-indent: 200px;
-
+		line-height: 50px;
+		text-indent: 10px;
+		text-align: left;
+	}
+	/*.name span:before{
+		display: inline;
+		content: "";
+		background-image: "url(../坐标.png)";
+		background-repeat: no-repeat;
+		z-index: 9999;
 	}
 	.name img{
 		display: inline; 
+	}*/
+	.a1:before{
+		display: inline-block;
+		content: "";
+		width: 20px;
+		height: 20px;
+		background-image: url(./表头_03.png);
+		background-repeat: no-repeat;
+		margin-top: 10px;
 	}
 	.a1{
 		border-bottom: 1px solid gray;
 		font-size: 20px;
-		text-indent: 50px;
-		line-height: 60px;
-		background-image: url(./表头.png);
-		background-repeat: no-repeat;
+		line-height: 50px;
 	}
+	.point{
+		width: 95%;
+		height: 50px;
+		border-bottom: 1px solid gray;
+		margin-left: 10px;
+
+	}
+	.im:before{
+		display: inline-block;
+		content: "";
+		width: 30px;
+		height: 22px;
+		background-image: url(./星型.png);
+		background-repeat: no-repeat;
+		margin: 5px 0 0 15px;
+	}
+	.im{
+		float: left;
+		line-height: 50px;
+	}
+
 	ul{
 		list-style-type: none;
+		clear: both;
 	}
 	li:first-child{
-		height: 50px;
-		list-style-image: url(./01.png);
-		list-style-position: inside;
-		color: red;
+		
+		
 	}
 	li:nth-child(2){
-		background-image: url(./02.png);
-		background-repeat: no-repeat;
-		color: black;
+		
+		
 	}
 	footer{
 		width: 100%;
 		height: 50px;
 		position: fixed;
-		position: absolute;
+		bottom: 0;
+		background: white;
 	}
 	footer .rside{
 		width: 48%;
@@ -94,7 +129,8 @@
 		box-sizing: border-box;
 		margin: 1%;
 		float: right;
-	
+		position: fixed;
+		position: relative;
 	}
 	footer .lside{
 		width: 48%;
@@ -109,7 +145,8 @@
 		box-sizing: border-box;
 		margin: 1%;
 		float: left;
-
+		position: fixed;
+		position: relative;
 	}
 </style>
 </head>
@@ -123,14 +160,17 @@
 			<img src="./头像.png">
 			<div class="name">
 				<p>徐士林 55岁</p>
-				<span><img src="./坐标.png"><span><p>京城 四方 报纸林</p>	
+				<p><span>京城</span> 四方 报纸林</p>	
 			</div>
 		</div>
 	</div>
 	<div class="detail">
 		<p class="a1">专业技能</p>
-		<p>住家</p>
-		<p>不含餐</p>
+		<div class="point">
+			<p class="im">住家</p>
+			<p class="im">不含餐</p>
+		</div>
+		
 		<ul>
 			<li>0~3年</li>
 			<li>全天</li>
