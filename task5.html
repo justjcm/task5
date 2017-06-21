@@ -9,9 +9,6 @@
 		margin: 0;
 		font-family: '微软雅黑','黑体',sans-serif;
 	}
-	img{
-		/*display: block;*/
-	}
 	header{
 		width: 100%;
 		height: 50px;
@@ -41,28 +38,34 @@
 	.pic{
 		width: 400px;
 		height: 100px;
-		padding: 15% 15% 0 5%;
+		padding: 10% 15% 0 10%;
 	}
 	.pic img{
 		float: left;
+		vertical-align: center;
 	}
 	.name{
 		color: white;
 		font-weight: bold;
-		line-height: 50px;
-		text-indent: 10px;
 		text-align: left;
 	}
-	/*.name span:before{
-		display: inline;
-		content: "";
-		background-image: "url(../坐标.png)";
-		background-repeat: no-repeat;
-		z-index: 9999;
+	.age{
+		font-size: 20px;
+		line-height: 50px;
+		text-indent: 50px;
 	}
-	.name img{
-		display: inline; 
-	}*/
+	.posi{
+		line-height: 20px;
+		text-indent: 40px;
+	}
+	.posi:before{
+		display: inline-block;
+		content: "";
+		width: 20px;
+		height: 22px;
+		background-image: url(./坐标.png);
+		background-repeat: no-repeat;
+	}
 	.a1:before{
 		display: inline-block;
 		content: "";
@@ -70,7 +73,6 @@
 		height: 20px;
 		background-image: url(./表头_03.png);
 		background-repeat: no-repeat;
-		margin-top: 10px;
 	}
 	.a1{
 		border-bottom: 1px solid gray;
@@ -99,16 +101,49 @@
 	}
 
 	ul{
+		padding: 0;
+		margin: 0;
 		list-style-type: none;
+		line-height: 50px;
 		clear: both;
 	}
-	li:first-child{
-		
-		
+	li{
+		padding: 0;
+		margin: 0;
+		width: 95%;
+		border-bottom: 1px solid gray;
 	}
-	li:nth-child(2){
+	.exp{
+		color: red;
+	}
+	li span{
+		vertical-align: center;
+		color:gray; 
+	}
+
+	/*.list{
+		width: 100%;
+		height: 19em;
+		vertical-align: center;
+	}
+	.list span{
 		
-		
+		vertical-align: center;
+		color:gray; 
+	}
+	.list p{
+		width: 60%;
+		float: right;
+	}*/
+	.intro{
+		width: 100%;
+		height: auto;
+		vertical-align: center;
+	}
+	.intro #info{
+		color: black;
+		text-align: center;
+		text-indent: 50%;
 	}
 	footer{
 		width: 100%;
@@ -159,8 +194,8 @@
 		<div class="pic">
 			<img src="./头像.png">
 			<div class="name">
-				<p>徐士林 55岁</p>
-				<p><span>京城</span> 四方 报纸林</p>	
+				<p class="age">徐士林 55岁</p>
+				<p class="posi">京城 四方 报纸林</p>	
 			</div>
 		</div>
 	</div>
@@ -172,11 +207,20 @@
 		</div>
 		
 		<ul>
-			<li>0~3年</li>
-			<li>全天</li>
-			<li>25元/小时</li>
-			<li>可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人</li>
-		</ul>
+			<li class="exp"><span>从业年限&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;0~3年</li>
+			<li class-"wh"><span>工作时间&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;全天</li>
+			<li class="pri"><span>服务价格&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;25元/小时</li>
+		
+			<li class="intro"><span>自我介绍&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;<span id="info">可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人</span><br><br>
+			</li>
+		</ul> 
+		<!--	<div class="list"><span>自我介绍&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;<p>可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人<br><br></p>
+		</div>-->
+	
+		<!--	<div class="list"><span>从业年限&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;<p class="exp">0~3年</p></div>
+		<div class="list"><span>工作时间&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;全天</div>
+		<div class="list"><span>服务价格&nbsp;&nbsp;&nbsp;|</span>&nbsp;&nbsp;&nbsp;25元/小时</div>
+		<div class="list"><div><span>自我介绍&nbsp;&nbsp;&nbsp;|</span></div><div>&nbsp;&nbsp;&nbsp;<p>可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人，可以洗衣服做饭照顾老人<br><br></p></div>-->
 	</div>
 	<footer>
 		<div class="lside">
