@@ -11,6 +11,7 @@
 		line-height: 50px;
 		background-color: #5AC0CE;
 		position: fixed;
+		z-index: 99999;
 	}
 	header img{
 		width: 18px;
@@ -118,6 +119,7 @@
 	
 	}
 	.intro{
+		width: 60%;
 		text-align: left;
 		position: relative;
 		left: 100px;
