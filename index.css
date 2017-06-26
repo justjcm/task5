@@ -75,7 +75,7 @@
 		width: 95%;
 		height: 50px;
 		border-bottom: 1px solid gray;
-		margin-left: 10px;
+		margin: 0 2.5%;
 
 	}
 	.im:before{
@@ -85,7 +85,7 @@
 		height: 22px;
 		background-image: url(./星型.png);
 		background-repeat: no-repeat;
-		margin: 5px 0 0 15px;
+		margin: 5px 0 0 5px;
 	}
 	.im{
 		float: left;
@@ -101,7 +101,7 @@
 	}
 	li{
 		padding: 0;
-		margin: 0 0 0 10px;
+		margin: 0 2.5%;
 		width: 95%;
 		border-bottom: 1px solid gray;
 	}
@@ -113,7 +113,9 @@
 		color:gray; 
 	}
 	.self{
-		line-height: auto;
+		/*display: table-cell;*/
+		vertical-align: center;
+	
 	}
 	.intro{
 		text-align: left;
